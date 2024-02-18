@@ -1,5 +1,5 @@
 import { View, Text, Pressable } from "react-native";
-import { useAuth } from "../../../../context/AuthProvider";
+import { useAuth } from "@/src/context/AuthProvider";
 import { Link } from "expo-router";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
