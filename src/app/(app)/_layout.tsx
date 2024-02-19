@@ -12,7 +12,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { useColorScheme } from "@/src/components/archive/useColorScheme";
 
 export {
-  // Catch any errors thrown by the Layout component.
+  // Catch any errors thrown by the home component.
   ErrorBoundary,
 } from "expo-router";
 
