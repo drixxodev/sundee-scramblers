@@ -1,4 +1,3 @@
-import { Link } from "expo-router";
 import { View, Text } from "react-native";
 import { useAuth } from "@/src/context/AuthProvider";
 import { TouchableOpacity } from "react-native-gesture-handler";

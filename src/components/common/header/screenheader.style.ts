@@ -1,5 +1,5 @@
 import { StyleSheet, ImageStyle } from "react-native";
-import { COLORS, SIZES } from "../../constants";
+import { COLORS, SIZES } from "@/src/constants";
 
 // Define btnImg as a standalone function
 export const btnImg = (dimension: number): ImageStyle => ({

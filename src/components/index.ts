@@ -1,2 +1,5 @@
-import ScreenHeaderBtn from "../components/home/ScreenHeaderBtn";
+// common
+import ScreenHeaderBtn from "./common/header/ScreenHeaderBtn";
+
+// exports
 export { ScreenHeaderBtn };
