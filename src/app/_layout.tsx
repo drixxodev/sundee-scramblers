@@ -2,6 +2,7 @@ import { Stack } from "expo-router";
 import React from "react";
 import { useFonts } from "expo-font";
 import { AuthProvider } from "@/src/context/AuthProvider";
+import { PaperProvider } from 'react-native-paper';
 
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({
@@ -16,6 +17,7 @@ export default function RootLayout() {
 
   return (
     <AuthProvider>
+      <PaperProvider>
       <Stack>
         <Stack.Screen
           name="(app)"
@@ -33,6 +35,7 @@ export default function RootLayout() {
           }}
         /> */}
       </Stack>
+      </PaperProvider>
     </AuthProvider>
   );
 }
