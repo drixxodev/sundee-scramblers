@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getAnalytics } from "firebase/analytics";
+import { getFirestore } from 'firebase/firestore';
 import Constants from 'expo-constants';
 
 // TODO: Replace the following with your app's Firebase project configuration
@@ -16,10 +17,8 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
+const auth = getAuth(app);
+const db = getFirestore(app);
 const analytics = getAnalytics(app);
 
-// Initialize Firebase Authentication and get a reference to the service
-const auth = getAuth(app);
-
-export default app;
+export {auth, db, analytics};
